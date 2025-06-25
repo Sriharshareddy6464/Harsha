@@ -12,6 +12,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import LoadingScreen from '../components/LoadingScreen';
 import Experience from '../components/Experience';
+import HowICanHelp from '../components/HowICanHelp';
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -73,6 +74,7 @@ export default function Home() {
           <Hero />
           <About />
           <Skills />
+          <HowICanHelp />
           <Experience {...experienceData} />
           <Projects />
           <AIProjects />
