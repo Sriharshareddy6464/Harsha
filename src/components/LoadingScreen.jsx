@@ -29,7 +29,7 @@ const LoadingScreen = ({ startExit, onExited }) => {
     <div className="fixed inset-0 z-[100] pointer-events-none overflow-hidden">
       {/* Panel 1 (Top-Left Blue Triangle that slides out to top-left) */}
       <div
-        className={`fixed inset-0 bg-blue-700 transition-all duration-[1000ms] ease-in-out ${
+        className={`fixed inset-0 bg-blue-700 transition-all duration-1000 ease-in-out ${
           isPanel1Exiting
             ? 'opacity-0 -translate-x-full -translate-y-full rotate-[-25deg]'
             : 'opacity-100 translate-x-0 translate-y-0 rotate-0'
@@ -41,7 +41,7 @@ const LoadingScreen = ({ startExit, onExited }) => {
       />
       {/* Panel 2 (Bottom-Right Blue Triangle that slides out to bottom-right) */}
       <div
-        className={`fixed inset-0 bg-blue-500 transition-all duration-[1000ms] ease-in-out ${
+        className={`fixed inset-0 bg-blue-500 transition-all duration-1000 ease-in-out ${
           isPanel2Exiting
             ? 'opacity-0 translate-x-full translate-y-full rotate-[25deg]'
             : 'opacity-100 translate-x-0 translate-y-0 rotate-0'

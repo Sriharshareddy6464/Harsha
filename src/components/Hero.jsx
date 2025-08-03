@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import Image from 'next/image';
+
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 
@@ -119,16 +119,13 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
             className="md:w-1/2"
           >
-            <div className="w-full max-w-xs mx-auto rounded-full overflow-hidden shadow-lg bg-white">
-              <Image
-                src="/assets/images/profile.jpg"
-                alt="Adapala Sriharsha Reddy"
-                width={320}
-                height={320}
-                className="object-cover w-full h-full"
-                priority
-              />
-            </div>
+                                  <div className="w-full max-w-xs mx-auto rounded-full overflow-hidden shadow-lg bg-white">
+                        <img
+                          src="/assets/images/profile.jpg"
+                          alt="Adapala Sriharsha Reddy"
+                          className="object-cover w-full h-full"
+                        />
+                      </div>
           </motion.div>
         </div>
       </div>

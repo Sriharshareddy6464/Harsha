@@ -1,36 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adapala Sriharsha Reddy - Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with **Vite**, **React**, and **Tailwind CSS**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Tech Stack**: Vite + React + Tailwind CSS
+- **Smooth Animations**: Framer Motion for engaging interactions
+- **Responsive Design**: Mobile-first approach
+- **Loading Screen**: Custom animated loading experience
+- **Dynamic Backgrounds**: Interactive mouse-tracking effects
+- **Infinite Scroll**: Tools and technologies showcase
+- **Modern UI Components**: shadcn/ui integration
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 18, Vite
+- **Styling**: Tailwind CSS, shadcn/ui
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+
+## 📁 Project Structure
+
+```
+advportfolio/
+├── public/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   └── resume/
+├── src/
+│   ├── components/
+│   │   ├── ui/           # shadcn/ui components
+│   │   ├── magicui/      # Custom UI effects
+│   │   └── *.jsx         # Main components
+│   ├── styles/
+│   │   └── globals.css   # Global styles
+│   ├── App.jsx           # Main app component
+│   └── main.jsx          # Entry point
+├── index.html
+├── vite.config.js
+├── tailwind.config.js
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Node.js (v16 or higher)
+- npm or yarn
 
-## Learn More
+### Installation
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd advportfolio
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build for Production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory.
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## 🎨 Customization
+
+### Personal Information
+Update the following files with your information:
+- `src/components/Hero.jsx` - Name and title
+- `src/components/About.jsx` - Personal description
+- `src/components/Contact.jsx` - Contact details
+- `src/components/Projects.jsx` - Your projects
+- `src/components/AIProjects.jsx` - AI/ML projects
+- `src/components/DevOps.jsx` - DevOps projects
+
+### Assets
+Place your assets in the `public/` directory:
+- Profile image: `public/assets/images/profile.jpg`
+- Project images: `public/assets/images/projects/`
+- Tool icons: `public/assets/icons/tools/`
+- Resume: `public/resume/`
+
+## 🌟 Key Components
+
+- **Header**: Navigation with animated triangle
+- **Hero**: Landing section with typing animation
+- **About**: Personal introduction with expertise cards
+- **Skills**: Progress bars and infinite scrolling tools
+- **What I Do**: Services offered
+- **Projects**: Web development projects
+- **DevOps**: Infrastructure projects
+- **AI Projects**: AI/ML projects with flickering grid
+- **Tools**: Design and development tools
+- **Contact**: Interactive mouse-tracking background
+- **Footer**: Social links and copyright
+
+## 🎯 Performance
+
+- **Fast Development**: Vite's hot module replacement
+- **Optimized Build**: Tree shaking and code splitting
+- **Image Optimization**: Proper sizing and formats
+- **Lazy Loading**: Components load as needed
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive and works on:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🔧 Configuration Files
+
+- `vite.config.js` - Vite configuration
+- `tailwind.config.js` - Tailwind CSS configuration
+- `postcss.config.js` - PostCSS configuration
+- `.eslintrc.cjs` - ESLint configuration
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Built with ❤️ using Vite, React, and Tailwind CSS**

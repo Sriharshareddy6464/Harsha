@@ -1,5 +1,16 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { BorderBeam } from "@/components/magicui/border-beam";
+import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -56,50 +67,70 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <div className="relative h-48">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+              <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-xl">{project.title}</CardTitle>
+                  <CardDescription className="text-sm">
+                    {project.description}
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="pb-4">
+                  <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="object-cover group-hover:scale-105 transition-transform duration-300 w-full h-full"
+                    />
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-medium"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </CardContent>
+                <CardFooter className="flex justify-between pt-0">
+                  <Button variant="outline" size="sm" asChild>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
                     >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-gray-900 transition-colors"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-700 transition-colors"
-                  >
-                    Live Demo
-                  </a>
-                </div>
-              </div>
+                      <Github className="h-4 w-4" />
+                      GitHub
+                    </a>
+                  </Button>
+                  <Button size="sm" asChild>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                      Live Demo
+                    </a>
+                  </Button>
+                </CardFooter>
+                <BorderBeam
+                  duration={4}
+                  size={300}
+                  className="from-transparent via-blue-500 to-transparent"
+                />
+                <BorderBeam
+                  duration={4}
+                  delay={2}
+                  size={300}
+                  borderWidth={2}
+                  className="from-transparent via-purple-500 to-transparent"
+                />
+              </Card>
             </motion.div>
           ))}
         </div>

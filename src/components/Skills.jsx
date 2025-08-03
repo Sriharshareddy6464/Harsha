@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+
 import { useEffect, useRef } from 'react';
 
 const skills = [
@@ -198,11 +198,10 @@ const Skills = () => {
                     className="flex-shrink-0 flex flex-col items-center group"
                   >
                     <div className="w-16 h-16 mb-2 relative bg-white rounded-lg p-2 shadow-sm transition-transform duration-300 group-hover:scale-110">
-                      <Image
+                      <img
                         src={tool.icon}
                         alt={tool.name}
-                        fill
-                        className="object-contain p-1"
+                        className="object-contain p-1 w-full h-full"
                       />
                     </div>
                     <span className="text-xs text-gray-700 font-medium text-center max-w-[100px]">
@@ -222,11 +221,10 @@ const Skills = () => {
                     className="flex-shrink-0 flex flex-col items-center group"
                   >
                     <div className="w-16 h-16 mb-2 relative bg-white rounded-lg p-2 shadow-sm transition-transform duration-300 group-hover:scale-110">
-                      <Image
+                      <img
                         src={tool.icon}
                         alt={tool.name}
-                        fill
-                        className="object-contain p-1"
+                        className="object-contain p-1 w-full h-full"
                       />
                     </div>
                     <span className="text-xs text-gray-700 font-medium text-center max-w-[100px]">

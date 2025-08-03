@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+
 
 const socialLinks = [
   {
@@ -163,28 +163,26 @@ const Contact = () => {
         <div className="flex flex-col items-center justify-center">
           <div className="mb-6">
             <div className="flex flex-col items-center space-y-2">
-              <div className="flex items-center space-x-2 mb-2">
-                <div className="w-5 h-5 relative">
-                  <Image
-                    src="/assets/icons/gmail.svg"
-                    alt="Email"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <span className="text-gray-200">adapalasriharshareddy@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-5 h-5 relative">
-                  <Image
-                    src="/assets/icons/phone.svg"
-                    alt="Phone"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <span className="text-gray-200">+91 9346946464</span>
-              </div>
+                                        <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-5 h-5 relative">
+                              <img
+                                src="/assets/icons/gmail.svg"
+                                alt="Email"
+                                className="object-contain w-full h-full"
+                              />
+                            </div>
+                            <span className="text-gray-200">adapalasriharshareddy@gmail.com</span>
+                          </div>
+                          <div className="flex items-center space-x-2">
+                            <div className="w-5 h-5 relative">
+                              <img
+                                src="/assets/icons/phone.svg"
+                                alt="Phone"
+                                className="object-contain w-full h-full"
+                              />
+                            </div>
+                            <span className="text-gray-200">+91 9346946464</span>
+                          </div>
             </div>
           </div>
 
@@ -200,11 +198,10 @@ const Contact = () => {
                 className="hover:opacity-80 transition-opacity"
               >
                 <div className="w-8 h-8 relative">
-                  <Image
+                  <img
                     src={social.icon}
                     alt={social.name}
-                    fill
-                    className="object-contain"
+                    className="object-contain w-full h-full"
                   />
                 </div>
               </motion.a>

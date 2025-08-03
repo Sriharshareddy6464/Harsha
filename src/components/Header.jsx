@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import AnimatedTriangle from './AnimatedTriangle';
 
 const Header = () => {
@@ -40,20 +39,20 @@ const Header = () => {
               className="animate-spin-slow text-blue-500 transition-transform duration-700"
               fillColor="#3b82f6"
             />
-            <Link href="/" className="text-2xl font-bold text-gray-800">
+            <a href="/" className="text-2xl font-bold text-gray-800">
               Portfolio
-            </Link>
+            </a>
           </div>
           
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </div>
 

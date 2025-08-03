@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+
 
 const Tools = () => {
   const tools = [
@@ -104,11 +104,10 @@ const Tools = () => {
                     className="flex items-center space-x-4"
                   >
                     <div className="relative w-12 h-12">
-                      <Image
+                      <img
                         src={tool.icon}
                         alt={tool.name}
-                        fill
-                        className="object-contain"
+                        className="object-contain w-full h-full"
                       />
                     </div>
                     <div>
