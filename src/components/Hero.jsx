@@ -100,17 +100,32 @@ const Hero = () => {
               I build modern web applications and AI solutions that make a difference.
               Passionate about creating seamless user experiences and innovative solutions.
             </p>
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <a
-                href="#contact"
-                className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors"
+            <div className="flex flex-col sm:flex-row gap-4">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                Get in Touch
-              </a>
-            </motion.div>
+                <a
+                  href="#contact"
+                  className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Get in Touch
+                </a>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a
+                  href="/resume/Adapala Sriharsha Reddy.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors"
+                >
+                  View Resume
+                </a>
+              </motion.div>
+            </div>
           </motion.div>
 
           <motion.div

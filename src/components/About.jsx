@@ -65,12 +65,15 @@ const About = () => {
           </h2>
                      <div className="max-w-4xl mx-auto space-y-6">
              <p className="text-xl text-white leading-relaxed">
-               I'm <span className="text-blue-300 font-semibold">Sri Harsha</span>, a Computer Science Engineering graduate focused on becoming an AI Engineer, Full-Stack Web Developer, and DevOps Specialist. My skill set spans Cloud, MLOps, Generative AI, and modern Web Technologies.
+               I'm <span className="text-blue-300 font-semibold">Sri Harsha</span>, a Computer Science graduate driven by curiosity and creativity. From building full-stack apps to exploring AI models, I love crafting things that simplify life and solve real-world problems. I believe good code isn't just functional—it should tell a story, impact people, and scale effortlessly
              </p>
-             <p className="text-lg text-white leading-relaxed">
-               I believe in building with purpose — whether it's developing AI-first solutions or rapidly delivering MVP products, designing seamless frontends with Next.js, or deploying scalable systems through DevOps pipelines.
-             </p>
-             <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30">
+                           <p className="text-lg text-white leading-relaxed">
+                My toolkit includes Generative AI, MLOps, Cloud, and modern Web Technologies. I kinda vibecode a little — turning rough ideas into working systems that actually feel good to use.
+              </p>
+              <p className="text-lg text-white leading-relaxed">
+                Whether it's building AI-first solutions, launching lean MVPs, designing clean, animated frontends, or deploying scalable apps through DevOps, I'm all about bringing ideas to life — fast, functional, and full of purpose.
+              </p>
+              <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/30">
                <p className="text-lg text-white mb-4">
                  I'm also the co-founder of <span className="text-purple-300 font-semibold">404Cult</span>, an open-source frontend community dedicated to experimenting, designing, and sharing impactful UI/UX work.
                </p>
@@ -166,25 +169,15 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center space-y-4"
         >
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full"
-              asChild
-            >
-              <a href="#contact">Let's Build Something Amazing</a>
-            </Button>
-            <Button 
-              variant="outline"
-              size="lg" 
-              className="border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg font-semibold rounded-full"
-              asChild
-            >
-              <a href="/resume/Adapala Sriharsha Reddy.pdf" target="_blank" rel="noopener noreferrer">
-                View Resume
-              </a>
-            </Button>
-          </div>
+                     <div className="flex justify-center">
+             <Button 
+               size="lg" 
+               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full"
+               asChild
+             >
+               <a href="#contact">Let's Build Something Amazing</a>
+             </Button>
+           </div>
         </motion.div>
       </div>
     </section>

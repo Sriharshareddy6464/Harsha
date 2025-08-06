@@ -4,39 +4,63 @@ import { useEffect, useRef } from 'react';
 
 const skills = [
   {
-    category: "Frontend",
+    category: "Languages",
     items: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "TypeScript", level: 80 },
-      { name: "Tailwind CSS", level: 90 },
+      "JavaScript",
+      "Python", 
+      "TypeScript",
+      "HTML/CSS",
+      "SQL",
     ]
   },
   {
-    category: "Backend",
+    category: "Frameworks",
     items: [
-      { name: "Node.js", level: 85 },
-      { name: "Python", level: 90 },
-      { name: "Django", level: 80 },
-      { name: "PostgreSQL", level: 85 },
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Django",
     ]
   },
   {
-    category: "AI/ML",
+    category: "Tools",
     items: [
-      { name: "TensorFlow", level: 80 },
-      { name: "PyTorch", level: 75 },
-      { name: "HuggingFace", level: 85 },
-      { name: "Scikit-learn", level: 90 },
+      "Git",
+      "Docker",
+      "Postman",
+      "Figma",
+      "VS Code",
     ]
   },
   {
-    category: "DevOps",
+    category: "IDE",
     items: [
-      { name: "Docker", level: 85 },
-      { name: "Kubernetes", level: 75 },
-      { name: "AWS", level: 80 },
-      { name: "CI/CD", level: 85 },
+      "VS Code",
+      "Cursor AI",
+      "IntelliJ",
+      "PyCharm",
+      "WebStorm",
+    ]
+  },
+  {
+    category: "AI",
+    items: [
+      "OpenAI API",
+      "HuggingFace",
+      "LangChain",
+      "Claude API",
+      "Gemini API",
+    ]
+  },
+  {
+    category: "ML",
+    items: [
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
     ]
   }
 ];
@@ -131,7 +155,7 @@ const Skills = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                 <div className="grid grid-cols-6 gap-4">
           {skills.map((skillGroup, index) => (
             <motion.div
               key={index}
@@ -144,25 +168,13 @@ const Skills = () => {
               <h3 className="text-xl font-bold text-gray-800 mb-6">
                 {skillGroup.category}
               </h3>
-              <div className="space-y-4">
-                {skillGroup.items.map((skill, skillIndex) => (
-                  <div key={skillIndex}>
-                    <div className="flex justify-between mb-1">
-                      <span className="text-gray-700">{skill.name}</span>
-                      <span className="text-gray-500">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 1, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="bg-blue-600 h-2 rounded-full"
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
+                             <div className="space-y-3">
+                 {skillGroup.items.map((skill, skillIndex) => (
+                   <div key={skillIndex} className="flex items-center">
+                     <span className="text-gray-700 font-medium">{skill}</span>
+                   </div>
+                 ))}
+               </div>
             </motion.div>
           ))}
         </div>
