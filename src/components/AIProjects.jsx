@@ -20,14 +20,14 @@ const aiProjects = [
     image: '/assets/images/projects/creorez.png',
     technologies: ['Python', 'React', 'FastAPI', 'OpenAI'],
     github: 'https://github.com/Sriharshareddy6464/doityourez',
-    demo: 'https://creores.vercel.app/',
+    demo: 'https://cerores.vercel.app/',
   },
   {
     title: 'Sentiment Analysis using NLTK',
     description: 'Natural Language Toolkit (NLTK) based project for text processing and analysis.',
     image: 'https://placehold.co/400x300?text=NLTK',
     technologies: ['NLTK', 'Python'],
-    github: 'https://github.com/yourusername/nltk-nlp',
+   
     demo: '',
   },
   {

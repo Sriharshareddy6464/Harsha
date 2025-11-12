@@ -17,10 +17,10 @@ const DevOps = () => {
     {
       title: "Creorez for Cloud Infrastructure",
       description: "Deploying and Utilizing AWS microservices for the Creorez platform for generating latex to pdf.",
-      image: "/assets/images/projects/cloud.jpg",
+      image: '/assets/images/projects/creorez.png',
       technologies: ["AWS", "EC2"],
       github: "https://github.com/Sriharshareddy6464/doityourez/blob/main/devops/doc/architecture.md",
-      details: "https://creores.vercel.app/"
+      details: "https://cerores.vercel.app/"
     },
     {
       title: "CI/CD Pipeline",

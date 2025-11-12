@@ -20,7 +20,7 @@ const Projects = () => {
       image: "/assets/images/projects/image.png",
       technologies: ["HTML5", "CSS3", "Vite.js", "TypeScript"],
       github: "https://github.com/Sriharshareddy6464/100x_vscode_clone",
-      live: "http://bit.ly/4mo2C8q"
+      live: "https://100x-vscode-clone.vercel.app/"
     },
     {
       title: "E-commerce Platform",
@@ -31,12 +31,13 @@ const Projects = () => {
       live: "https://ecommerce-demo.vercel.app/"
     },
     {
-      title: "Social Media Dashboard",
-      description: "A comprehensive social media analytics dashboard with data visualization.",
-      image: "/assets/images/projects/dashboard.png",
-      technologies: ["React", "D3.js", "Express", "Redis"],
-      github: "https://github.com/Sriharshareddy6464/dashboard",
-      live: "https://dashboard-demo.vercel.app/"
+      title: "404CULT Website",
+      description: "A platform for community exploring and sharing 404 errors of developers.",
+      image: "/assets/images/projects/404cult.jpg",
+      technologies: ["React", "Vite", "Express", "Tailwind CSS"],
+      github: "https://github.com/Sriharshareddy6464/404-cult",
+      live: "https://404-cult.vercel.app/",
+
     }
   ];
 
