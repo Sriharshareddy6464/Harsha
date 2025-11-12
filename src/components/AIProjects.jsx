@@ -17,10 +17,10 @@ const aiProjects = [
   {
     title: 'Creorez AI resume Builder',
     description: 'AI-powered resume builder that helps users create professional resumes effortlessly.',
-    image: 'C:\\Users\\sriha\\OpenProjects\\advportfolio\\public\\assets\\images\\projects\\creorez.png',
+    image: '/assets/images/projects/creorez.png',
     technologies: ['Python', 'React', 'FastAPI', 'OpenAI'],
     github: 'https://github.com/Sriharshareddy6464/doityourez',
-    demo: 'https://cerores.vercel.app/',
+    demo: 'https://creores.vercel.app/',
   },
   {
     title: 'Sentiment Analysis using NLTK',
