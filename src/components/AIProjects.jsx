@@ -15,12 +15,12 @@ import { ExternalLink, Github, Brain } from "lucide-react";
 
 const aiProjects = [
   {
-    title: 'AI Chatbot',
-    description: 'Conversational AI chatbot for customer support and automation.',
-    image: 'https://placehold.co/400x300?text=Chatbot',
-    technologies: ['Rasa', 'Python', 'React'],
-    github: 'https://github.com/yourusername/ai-chatbot',
-    demo: 'https://ai-chatbot-demo.com',
+    title: 'Creorez AI resume Builder',
+    description: 'AI-powered resume builder that helps users create professional resumes effortlessly.',
+    image: 'C:\\Users\\sriha\\OpenProjects\\advportfolio\\public\\assets\\images\\projects\\creorez.png',
+    technologies: ['Python', 'React', 'FastAPI', 'OpenAI'],
+    github: 'https://github.com/Sriharshareddy6464/doityourez',
+    demo: 'https://cerores.vercel.app/',
   },
   {
     title: 'Sentiment Analysis using NLTK',

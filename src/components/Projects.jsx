@@ -15,28 +15,28 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce platform with real-time inventory management and payment processing.",
-      image: "https://via.placeholder.com/400x300",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yourusername/ecommerce",
-      live: "https://ecommerce-demo.com"
+      title: "VS Code Clone",
+      description: "A hand-coded tribute to VS Code's homepage with custom wave animations and modern design principles.",
+      image: "/assets/images/projects/image.png",
+      technologies: ["HTML5", "CSS3", "Vite.js", "TypeScript"],
+      github: "https://github.com/Sriharshareddy6464/100x_vscode_clone",
+      live: "http://bit.ly/4mo2C8q"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates and team features.",
-      image: "https://via.placeholder.com/400x300",
-      technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      github: "https://github.com/yourusername/taskmanager",
-      live: "https://taskmanager-demo.com"
+      title: "E-commerce Platform",
+      description: "A full-stack e-commerce platform with real-time inventory management and payment processing.",
+      image: "/assets/images/projects/ecommerce.png",
+      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      github: "https://github.com/Sriharshareddy6464/ecommerce",
+      live: "https://ecommerce-demo.vercel.app/"
     },
     {
       title: "Social Media Dashboard",
       description: "A comprehensive social media analytics dashboard with data visualization.",
-      image: "https://via.placeholder.com/400x300",
+      image: "/assets/images/projects/dashboard.png",
       technologies: ["React", "D3.js", "Express", "Redis"],
-      github: "https://github.com/yourusername/dashboard",
-      live: "https://dashboard-demo.com"
+      github: "https://github.com/Sriharshareddy6464/dashboard",
+      live: "https://dashboard-demo.vercel.app/"
     }
   ];
 
@@ -77,11 +77,18 @@ const Projects = () => {
                 </CardHeader>
                 <CardContent className="pb-4">
                   <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="object-cover group-hover:scale-105 transition-transform duration-300 w-full h-full"
-                    />
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block cursor-pointer"
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="object-cover group-hover:scale-105 transition-transform duration-300 w-full h-full"
+                      />
+                    </a>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
